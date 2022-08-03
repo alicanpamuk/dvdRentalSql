@@ -1,0 +1,15 @@
+--Soru 1)
+select country from country
+where country LIKE ('A%a') 
+
+--Soru 2)
+select country from country
+where country LIKE ('______%n')
+
+--Soru 3)
+select title from film 
+where title ILIKE ('%T%T%T%T%')
+
+--Soru 4)
+select * from film 
+where title LIKE ('C%') AND length>90 AND rental_rate = 2.99
