@@ -1,0 +1,18 @@
+-- soru 1
+select * from film
+WHERE title LIKE ('%n')
+ORDER BY LENGTH DESC
+LIMIT 5;
+
+--soru 2
+select * from film
+WHERE title LIKE ('%n')
+ORDER BY LENGTH ASC
+OFFSET 5
+LIMIT 5;
+
+--soru 3
+select last_name from customer 
+WHERE store_id = '1'
+ORDER BY DESC last_name
+LIMIT 4;
